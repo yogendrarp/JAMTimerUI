@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .override {
+      padding: 40px;
+      font-size: larger;
+      font-weight: bold;
+      margin: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container page-header" style="margin-top: -50px;">
+    <h1 style="font-size: 80px">Just a Minute!</h1>
+    <h4>a KSHAMATA event</h4> 
+  </div>
+ <div id="app" style="margin-bottom: -100px;margin-top: -50px;"></div> 
+ <div class="row" style="margin-top: -10px;">
+<div class="col-lg-4 ">
+<button onclick="nextTeam()" class="override btn btn-primary btn-lg extra">Next  JAMmers</button></div>
+<div class="col-lg-4">
+<button onclick="startGivenTime(20)" class="override btn btn-info btn-lg extra">Lets do some Prep!</button>
+ </div>
+<div class="col-lg-4">
+<button onclick="startGivenTime(60)" class="override btn btn-success btn-lg extra">Start JAMming!</button>
+</div>
+ </div>
+ <div style="margin-top: -80px;" class="float-left">
+   <h2 class="text-primary text-centre" style="font-size: 30px;">Team : <h3 class="text-success" id="team">Searching for Jammers</h3></h2>
+   <h2 class="text-primary text-centre" style="font-size: 30px;">Topic : <h3 class="text-success" id="topic">Searching for topics</h3></h2>
+   <br><br><br>
+  
+ </div>
+ <br>
+ <br>
+ <br>
+ <span> <p style="text-align: right;margin-left: 1200px;"> Website by Yogendra</p></span>
+<script src="script.js"></script>
+
+</body>
+</html>
