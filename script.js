@@ -49,7 +49,9 @@ function reload(timerValue, sound){
     </div>
     `;
     
+    clearInterval(timerInterval);
     startTimer();
+
     
     function onTimesUp() {
       clearInterval(timerInterval);
@@ -139,13 +141,19 @@ function startGivenTime(timer) {
 
 function nextTeam() {
     reload(-1,false);
-    $.ajax({url: "http://localhost:8080/next", success: function(result){
+    $.ajax({url: "http://localhost:8080/team", success: function(result){
         document.getElementById("team").innerHTML = result.team;
-        document.getElementById("topic").innerHTML = result.topic;
+        document.getElementById("topic").innerHTML = "";
       }});
     
   }
-  
+
+  function nextTopic() {
+    $.ajax({url: "http://localhost:8080/topic", success: function(result){
+        document.getElementById("topic").innerHTML = result.topic;
+      }});
+    
+  }  
 
     
         
